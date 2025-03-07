@@ -1,0 +1,367 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.logo {
+    height: 20px;
+}
+
+.header-content {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.header-content::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+    white-space: nowrap;
+}
+
+.icon-size {
+    font-size: 1rem;
+}
+
+.valentines-section {
+    background: url("images/background.png") no-repeat center center;
+    background-size: cover;
+    padding: 12vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-valentines {
+    color: #000;
+    position: relative;
+    top: 180px;
+}
+
+.valentine-title {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.valentine-text {
+    font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+    margin-bottom: 1rem;
+}
+
+.valentine-btn {
+    padding: 0.4rem 1.5rem;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.iphone-section {
+    background: url("images/Pro16.svg") no-repeat center;
+    background-size: cover;
+    padding: 12vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.container-iphone {
+    position: relative;
+    top: -180px;
+    width: 30%;
+}
+
+.iphone-title {
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.iphone-subtitle {
+    font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+    margin-bottom: 1.5rem;
+}
+
+.iphone-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.iphone-btn {
+    font-size: clamp(0.8rem, 1.4vw, 1rem);
+    padding: 0.5rem 1.5rem;
+}
+
+.product-grid-section {
+    margin: 100px 0;
+}
+
+.product-block {
+    background-position: center;
+    background-size: cover;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.iphone16 {
+    background-image: url("images/iphone16.png");
+}
+
+.iphone16-content {
+    color: #fff;
+    position: relative;
+    top: -135px;
+}
+
+.watch-classic {
+    background-color: #f8f8f7;
+    background-image: url("images/series10.png");
+    color: #000;
+}
+
+.watch10-content {
+    position: relative;
+    top: -130px;
+}
+
+.watch-unity {
+    background-image: url("images/watch.png");
+}
+
+.watch-unity .watch-content {
+    color: #fff;
+    position: relative;
+    top: -108px;
+}
+
+.macbook-air {
+    background-color: #f5f5f7;
+    background-image: url("images/MacAir.png");
+    color: #000;
+}
+
+.MacAir-content {
+    position: relative;
+    top: -115px;
+}
+
+.product-block h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-block p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-block .btn {
+    margin: 0.2rem;
+}
+
+.iphone16-content .btn-outline-dark,
+.watch-unity .btn-light {
+    border-color: #fff;
+    color: #000;
+}
+
+.iphone16-content .btn-outline-dark:hover,
+.watch-unity .btn-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer-section {
+    font-size: 0.9rem;
+    margin-top: 100px;
+}
+
+.footer-section h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-section .nav-link {
+    color: #6c757d;
+    transition: color 0.3s;
+}
+
+.footer-section .nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.footer-section .border-top {
+    border-top-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-block {
+    margin-bottom: 20px;
+}
+
+.product-grid-section .row {
+    gap: 20px 0;
+}
+
+/* Адаптивный дизайн */
+
+@media (max-width: 1440px) {
+    .valentines-section, .iphone-section {
+        padding: 15vw 0;
+        background-size: contain;
+    }
+
+    .valentine-title, .iphone-title {
+        font-size: 3vw;
+    }
+
+    .valentine-text, .iphone-subtitle {
+        font-size: 1.5vw;
+    }
+
+    .valentine-btn, .iphone-btn {
+        font-size: 1.2vw;
+        padding: 1vw 3vw;
+    }
+
+    .iphone-img {
+        width: 65%;
+    }
+
+    .product-block {
+        padding: 8rem;
+    }
+
+    .product-block h3 {
+        font-size: 1.8rem;
+    }
+
+    .product-block p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .valentines-section, .iphone-section {
+        padding: 18vw 0;
+        background-size: contain;
+    }
+
+    .valentine-title, .iphone-title {
+        font-size: 4vw;
+    }
+
+    .valentine-text, .iphone-subtitle {
+        font-size: 2vw;
+    }
+
+    .valentine-btn, .iphone-btn {
+        font-size: 1.5vw;
+        padding: 1.2vw 3.5vw;
+    }
+
+    .iphone-img {
+        width: 60%;
+    }
+
+    .product-block {
+        padding: 6rem;
+    }
+
+    .product-block h3 {
+        font-size: 1.6rem;
+    }
+
+    .product-block p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .valentines-section, .iphone-section {
+        padding: 22vw 0;
+        background-size: contain;
+    }
+
+    .valentine-title, .iphone-title {
+        font-size: 5vw;
+    }
+
+    .valentine-text, .iphone-subtitle {
+        font-size: 2.5vw;
+    }
+
+    .valentine-btn, .iphone-btn {
+        font-size: 2vw;
+        padding: 1.5vw 4vw;
+    }
+
+    .iphone-buttons {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .iphone-img {
+        width: 50%;
+    }
+
+    .product-block {
+        padding: 4rem;
+    }
+
+    .product-block h3 {
+        font-size: 1.4rem;
+    }
+
+    .product-block p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .valentines-section, .iphone-section {
+        padding: 25vw 0;
+        background-size: contain;
+    }
+
+    .valentine-title, .iphone-title {
+        font-size: 6vw;
+    }
+
+    .valentine-text, .iphone-subtitle {
+        font-size: 3vw;
+    }
+
+    .valentine-btn, .iphone-btn {
+        font-size: 2.5vw;
+        padding: 2vw 4vw;
+    }
+
+    .iphone-img {
+        width: 40%;
+    }
+
+    .product-block {
+        padding: 2rem;
+    }
+
+    .product-block h3 {
+        font-size: 1.2rem;
+    }
+
+    .product-block p {
+        font-size: 0.6rem;
+    }
+}
+
